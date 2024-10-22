@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- leaflet library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="bg-img">
+        <h1 class="headline">IP Address Tracker</h1>
+        <div class="search">
+          <input
+            type="search"
+            id="search-box"
+            placeholder="Search for any Ip address"
+          />
+          <button class="search-button">></button>
+        </div>
+      </div>
+      <div class="info">
+        <div class="ip-address box">
+          <p class="text">IP ADDRESS</p>
+          <p class="ip">000.000.000.000</p>
+        </div>
+        <div class="location box">
+          <p class="text">LOCATION</p>
+          <p class="address">00000 City, Country</p>
+        </div>
+        <div class="timezone box">
+          <p class="text">TIMEZONE</p>
+          <p class="real-timezone">UTC - 00:00</p>
+        </div>
+        <div class="isp box">
+          <p class="text">ISP</p>
+          <p class="provider">ISP</p>
+        </div>
+      </div>
+      <div class="map">
+        <iframe id="map"></iframe>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
